@@ -19,5 +19,7 @@ The filtering method is inspired from MCollective:
 example of my db_fields : environment, is_virtual, serverroom, osversion, ...
 
 
+
 this script filters first on db_fields. If many of them, the relation is AND
+
 then on Identites. If many of them, the relation is OR
