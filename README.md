@@ -8,12 +8,16 @@ The filtering method is inspired from MCollective:
 
 -I /regexp/
 
-for filtering device name based on the regular expression
+(I => Identity) for filtering device name based on the regular expression
 
 
 -F db_field=db_value
 
-only device matching specfied db_value for db_field
+(F => Field) only device matching specfied db_value for db_field
 
 
 example of my db_fields : environment, is_virtual, serverroom, osversion, ...
+
+
+this script filters first on db_fields. If many of them, the relation is AND
+then on Identites. If many of them, the relation is OR
