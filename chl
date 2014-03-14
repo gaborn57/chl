@@ -13,9 +13,9 @@ use strict;
 
 
 #===============================================================================
-# Developpeur |   Date    | Description                                        |
+# who         |   Date    | Description                                        |
 #===============================================================================
-# sebhube     |30 Dec 2013| En cours                                           |
+# gaborn57    |30 Dec 2013| Started                                            |
 #             |           |                                                    |
 #===============================================================================
 #             |           |                                                    |
@@ -32,7 +32,7 @@ use Term::ANSIColor qw(:constants);
 
 # Connect to the database
 my $dbh = DBI->connect('DBI:mysql:database=sysadm;host=chl.fr117.corpintra.net',
-                       'sysadm', 'Nag4>saki',
+                       'sysadm', 'XXXXX',
                        {'RaiseError' => 1});
 
 $dbh->do(qq{SET NAMES 'utf8';});
