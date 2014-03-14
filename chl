@@ -4,7 +4,7 @@ use strict;
 #===============================================================================
 #   <chl>                                                                      |
 #===============================================================================
-#   Description          : tool for retrieve and set changed performed to a/many
+#   Description          : tool for retrieve and set change performed to a/many
 #       server(s)/device(s)
 #       
 #   Parametres           : see sub usage
@@ -15,7 +15,7 @@ use strict;
 #===============================================================================
 # who         |   Date    | Description                                        |
 #===============================================================================
-# gaborn57    |30 Dec 2013| Started                                            |
+# S. Huber    |30 Dec 2013| Started                                            |
 #             |           |                                                    |
 #===============================================================================
 #             |           |                                                    |
