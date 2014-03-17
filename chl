@@ -42,7 +42,7 @@ my $request_state=0;
 
 sub fill_request() {
   my (@args)=@_;
-  my $text=$args[0];
+  my $text=shift(@args);
 
   if (!defined($text) or $text eq '') {
     print "malformed request. Base was: $query\n";
@@ -173,7 +173,7 @@ if (defined($setdata) and "$setdata" eq "") {
 if (defined($timestamp)) {
   $timestamp="${timestamp}00";
   if ($timestamp!~m/^20\d{12}$/) {
-    print STDERR RED, "wrong specified timestamp.\nAwaited YYYYMMDDHHmm\tExample: 201406031030 for 2014/06/03 10:30\n", RESET;
+    print STDERR RED, "bad timestamp.\nAwaited YYYYMMDDHHmm\tExample: 201406031030 for 2014/06/03 10:30\n", RESET;
     # Disconnect from the database.
     $dbh->disconnect();
     exit 3;
